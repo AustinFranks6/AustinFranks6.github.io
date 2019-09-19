@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Navigation from "./components/Navigation";
+import LeftRight from "./components/Slide.js";
 
 /*SLICK CAROUSEL*/
 
@@ -21,7 +22,7 @@ const Styles = styled.div`
   }
 
   .aboutMeBg {
-    background-image: url("images/background/mountains.JPG");
+    background-image: url("images/background/dark.JPG");
     min-height: 100vh;
   }
 
@@ -30,7 +31,7 @@ const Styles = styled.div`
     min-height: 100vh;
   }
   .contactBg {
-    background-image: url("images/background/contactMe.JPG");
+    background-image: url("images/background/contactME3.JPG");
     min-height: 100vh;
   }
 
@@ -47,37 +48,165 @@ const Styles = styled.div`
   /*About styling*/
   .container1 {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     margin-top: -50px;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    opacity: 0.9;
   }
 
   .AboutMeTitle {
     text-align: center;
     color: red;
     font-size: 70px;
+    font-family: "Spectral SC", serif;
   }
   .AboutMe {
     text-align: center;
     color: peachpuff;
     font-size: 30px;
+    font-family: "Vollkorn SC", serif;
   }
 
   .ProjectsTitle {
     text-align: center;
     color: red;
     font-size: 50px;
+    font-family: "Spectral SC", serif;
   }
 
   .ContactTitle {
     text-align: center;
     color: red;
     font-size: 50px;
+    font-family: "Spectral SC", serif;
   }
   /*About styling*/
+
+  /*CONTACT ME*/
+  .contactbox {
+    height: 50vh;
+    width: 75vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: red;
+    font-family: "Vollkorn SC", serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+    font-family: "Vollkorn SC", serif;
+  }
+
+  .contactStyle {
+    font-size:40px;
+  }
+  /*CONTACT ME*/
+
+  /*MEDIA QUERYS*/
+  @media (min-width: 1281px) {
+  }
+
+  /* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .container1 {
+      width: 700px;
+    }
+  }
+
+  /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container1 {
+      width: 650px;
+    }
+
+    .ProjectsTitle {
+      font-size: 40px;
+    }
+    .ContactTitle {
+      font-size: 40px;
+    }
+  }
+
+  /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container1 {
+      width: 650px;
+    }
+
+    .ProjectsTitle {
+      font-size: 40px;
+    }
+    .ContactTitle {
+      font-size: 40px;
+    }
+  }
+
+  /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    .container1 {
+      width: 80vw;
+    }
+
+    .ProjectsTitle {
+      font-size: 25px;
+    }
+    .ContactTitle {
+      font-size: 25px;
+    }
+  }
+
+  /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .container1 {
+      width: 80vw;
+    }
+
+    .ProjectsTitle {
+      font-size: 25px;
+    }
+    .ContactTitle {
+      font-size: 25px;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 319px) {
+    .container1 {
+      width: 80vw;
+    }
+
+    .ProjectsTitle {
+      display: none;
+    }
+    .ContactTitle {
+      display: none;
+    }
+  }
+  /*MEDIA QUERYS*/
 `;
 
 function Allpage() {
@@ -87,31 +216,48 @@ function Allpage() {
         <Navigation />
 
         <div className="container1">
-          <h1 className="AboutMeTitle">Austin Franks' Portfolio</h1>
+          <h1 className="AboutMeTitle">Austin Franks</h1>
           <p className="AboutMe">
-            I am a full stack web developer who's well versed in react, html,
+            I am a full stack web developer versed in react, html,
             javascript, css, mysql, and mongodb
           </p>
         </div>
       </div>
 
       <section className="container2">
-        <h2 className="ProjectsTitle">My Projects/Experience</h2>
+        <h2 className="ProjectsTitle">My Projects and Experience</h2>
       </section>
 
       <div className="projectBg" id="Projects">
         <div className="projectStyle">
-          <span className="border">My projects</span>
+          <span className="border">
+            <LeftRight />
+          </span>
         </div>
       </div>
 
-      <section className="title3">
+      <section className="container3">
         <h2 className="ContactTitle">Contact Me</h2>
       </section>
 
       <div className="contactBg" id="Contact">
         <div className="contactStyle">
-          <span className="border"></span>
+          <span className="contactbox">
+            <h5>Email me at austinfranks704@gmail.com</h5>
+            <h5>
+              <a
+                href="https://www.linkedin.com/in/austin-franks-247b18170/"
+                target="_blank"
+              >
+                Check out my linkedin
+              </a>
+            </h5>
+            <h5>
+              <a href="https://github.com/AustinFranks6" target="_blank">
+                Take a look at my github
+              </a>
+            </h5>
+          </span>
         </div>
       </div>
     </Styles>
