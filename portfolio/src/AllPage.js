@@ -63,7 +63,7 @@ const Styles = styled.div`
   }
   .AboutMe {
     text-align: center;
-    color: peachpuff;
+    color: black;
     font-size: 30px;
     font-family: "Vollkorn SC", serif;
   }
