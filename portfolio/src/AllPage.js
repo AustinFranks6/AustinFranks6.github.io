@@ -103,7 +103,7 @@ const Styles = styled.div`
   }
 
   .contactStyle {
-    font-size:40px;
+    font-size: 40px;
   }
   /*CONTACT ME*/
 
@@ -218,8 +218,8 @@ function Allpage() {
         <div className="container1">
           <h1 className="AboutMeTitle">Austin Franks</h1>
           <p className="AboutMe">
-            I am a full stack web developer versed in react, html,
-            javascript, css, mysql, and mongodb
+            I am a full stack web developer versed in react, html, javascript,
+            css, mysql, and mongodb
           </p>
         </div>
       </div>
@@ -243,7 +243,7 @@ function Allpage() {
       <div className="contactBg" id="Contact">
         <div className="contactStyle">
           <span className="contactbox">
-            <h5>Email me at austinfranks704@gmail.com</h5>
+            <h5>Email me at austinfranksjobs@gmail.com</h5>
             <h5>
               <a
                 href="https://www.linkedin.com/in/austin-franks-247b18170/"

@@ -36,9 +36,10 @@ const Styles = styled.div`
     transition: 0.8s all;
   }
   nav ul li:hover {
-    background-color: lightsalmon;
-    opacity: 0.1;
-    border-radius: 10px;
+    color: #ffffff !important;
+    background: red;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
   }
 
   nav ul li a {
@@ -47,6 +48,12 @@ const Styles = styled.div`
     padding: 30px;
     text-transform: uppercase;
     opacity: 1;
+    transition: 0.8s all;
+  }
+
+  a:hover {
+    color: white;
+    letter-spacing: 5px;
   }
 
   .logo {
@@ -186,11 +193,6 @@ function Navigation() {
         <nav>
           <img src="/images/mylogo2.jpg" className="logo" />
           <ul>
-            <li>
-              <a href="#About" className="verysmall1">
-                About me
-              </a>
-            </li>
             <li>
               <a href="#Projects" className="verysmall2">
                 My Projects
