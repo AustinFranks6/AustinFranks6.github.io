@@ -58,14 +58,15 @@ function LeftRight() {
     <Slider {...settings}>
       <div className="sub-a">
         <h1>TRULYBLESSED</h1>
-        <a>
+        <p>
           Truly blessed is a landing page that gives the owner links to their
           social media as asked and a gallery to show of their custom pieces.
           This is built in react and deployed with netlify at
+          <br></br>
           <a href="trulyblessed.netlify.com" target="_blank">
             trulyblessed.netlify.com
           </a>
-        </a>
+        </p>
       </div>
       <div className="sub-a">
         <video width="100%" height="auto" controls>
@@ -76,14 +77,14 @@ function LeftRight() {
       </div>
       <div className="sub-a">
         <h1>BEATSBYFRANKS</h1>
-        <a>
+        <p>
           This is my very own beatsite in the works it is currently unfinished
           but shall be very soon.This is built in react and deployed with
-          netlify at
+          netlify at <br></br>
           <a href="beatsbyfranks.netlify.com" target="_blank">
             beatsbyfranks.netlify.com
           </a>
-        </a>
+        </p>
       </div>
       <div className="sub-a">
         <video width="100%" height="auto" controls>
@@ -94,7 +95,7 @@ function LeftRight() {
       </div>
       <div className="sub-a">
         <h1>CALCULATOR</h1>
-        <a>This is a calculator I built with html css and javascript</a>
+        <p>This is a calculator I built with html css and javascript</p>
       </div>
       <div className="sub-a">
         <video width="100%" height="auto" controls>
@@ -105,11 +106,11 @@ function LeftRight() {
       </div>
       <div className="sub-a">
         <h1>TriviaGame</h1>
-        <a>
+        <p>
           This was my first project in my coding bootcamp. Me and another
           classmate were put on the front end. We made a great interface for the
           game.
-        </a>
+        </p>
       </div>
       <div className="sub-a">
         <video width="100%" height="auto" controls>
