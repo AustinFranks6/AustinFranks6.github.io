@@ -63,8 +63,8 @@ function LeftRight() {
           social media as asked and a gallery to show of their custom pieces.
           This is built in react and deployed with netlify at
           <br></br>
-          <a href="trulyblessed.netlify.com" target="_blank">
-            trulyblessed.netlify.com
+          <a href="https://trulyblessed-eb785.web.app/#p2" target="_blank">
+            https://trulyblessed-eb785.web.app/#p2{" "}
           </a>
         </p>
       </div>
@@ -96,6 +96,9 @@ function LeftRight() {
       <div className="sub-a">
         <h1>CALCULATOR</h1>
         <p>This is a calculator I built with html css and javascript</p>
+        <a href="https://calculator-e27ee.web.app/" target="_blank">
+          https://calculator-e27ee.web.app/
+        </a>
       </div>
       <div className="sub-a">
         <video width="100%" height="auto" controls>

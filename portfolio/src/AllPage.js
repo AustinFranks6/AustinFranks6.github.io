@@ -22,7 +22,7 @@ const Styles = styled.div`
   }
 
   .aboutMeBg {
-    background-image: url("images/background/dark.JPG");
+    background-image: url("images/background/dark.jpg");
     min-height: 100vh;
   }
 
@@ -31,7 +31,7 @@ const Styles = styled.div`
     min-height: 100vh;
   }
   .contactBg {
-    background-image: url("images/background/contactME3.JPG");
+    background-image: url("images/background/light.jpg");
     min-height: 100vh;
   }
 
@@ -174,6 +174,11 @@ const Styles = styled.div`
     .ContactTitle {
       font-size: 25px;
     }
+    h5 {
+      white-space: initial;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   /* 
@@ -182,6 +187,10 @@ const Styles = styled.div`
 */
 
   @media (min-width: 320px) and (max-width: 480px) {
+    .AboutMeTitle {
+      font-size: 40px;
+    }
+
     .container1 {
       width: 80vw;
     }
@@ -191,6 +200,11 @@ const Styles = styled.div`
     }
     .ContactTitle {
       font-size: 25px;
+    }
+    h5 {
+      white-space: initial;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
@@ -204,6 +218,11 @@ const Styles = styled.div`
     }
     .ContactTitle {
       display: none;
+    }
+    h5 {
+      white-space: initial;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   /*MEDIA QUERYS*/
